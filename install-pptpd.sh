@@ -25,7 +25,7 @@ pass=`openssl rand 6 -base64`
 if [ "$1" != "" ]
   then pass=$1
 fi
-echo "zhaodg pptpd ${pass} *" >> /etc/ppp/chap-secrets
+echo "vpnuser pptpd ${pass} *" >> /etc/ppp/chap-secrets
 
 # /etc/pptpd.conf
 echo "localip 192.168.0.1" >> /etc/pptpd.conf
@@ -68,4 +68,4 @@ iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth0 -j MASQUERADE
 chkconfig pptpd on
 
 
-echo "VPN service is installed, your VPN username is zhaodg, VPN password is ${pass}"
+echo "VPN service is installed, your VPN username is vpnuser, VPN password is ${pass}"

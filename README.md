@@ -14,8 +14,9 @@ $ sh install-pptpd.sh
 ```
 
 # Help
-You can see it in my blog:
+You can see it in zhaodg's blog:
 <http://zhaodg.github.io/2015/04/26/build-vpn/>.
 
-My blog address <http://zhaodg.github.io>.
+zhaodg's address <http://zhaodg.github.io>.
 
+拷贝一份以防万一
